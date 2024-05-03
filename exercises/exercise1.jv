@@ -41,7 +41,7 @@ pipeline AirportsPipeline {
             "Zeitzone" oftype decimal,
             "DST" oftype text,
             "Zeitzonen-Datenbank" oftype text,
-            "geo_punkt" oftype decimal,
+            "geo_punkt" oftype text,
             // "" oftype decimal, //there is no column (col-14) name in the csv file
         ];
     }
