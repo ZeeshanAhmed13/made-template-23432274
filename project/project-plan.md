@@ -9,7 +9,7 @@ Analysis and Visualization of Agricultural Data based on the impact of Climate C
 
 <!-- Think about one main question you want to answer based on the data. -->
 
-1. What impact has climate change based on temperature and rainfall pattern had on crop production in countries around the world in the last decades? Have there been any trends or recurring patterns, in crop yields?
+1. What impact has climate change based on temperature had on crop production in countries around the world in the last years or decades? Have there been any trends or recurring patterns, in crop yields?
 
 2. Are there any considerable shifts in the geographical crops distribution as a result of changes in climatic conditions?
 
@@ -17,7 +17,7 @@ Analysis and Visualization of Agricultural Data based on the impact of Climate C
 
 <!-- Describe your data science project in max. 200 words. Consider writing about why and how you attempt it. -->
 
-<p style="text-align: justify;">Climate change implies significant challenges to agricultural productivity worldwide, impacting crop yields. Nevertheless, understanding the complex relation between climate and agricultural data remains a barrier, which needs an efficient data analysis and visualization framework. For this purpose, the objective of this project is to build an ETL pipeline to assess or measure the impact of climate change on agricultural data and provide necassary valuable insights. The pipeline will collect various public datasets including historical climate data such as temperature and rainfall, and different crops yield records. The extracted data will undergo several transformations to standardize formats, clean outliers, filling missing values and integrate relevant variables. Accordingly, the loaded data will be analyzed using statistical techniques to identify trends, correlations, irregularity caused by climate change effects on crop yield variability. The time series plots, heatmaps, and geographical maps as visualization techniques is utilized to effectively provide insights and patterns derived from the analysis. This framework will empower policymakers, and researchers on how to handle the difficulties arising from climate change in agriculture by providing them with well-informed decision-making capabilities.</p>
+<p style="text-align: justify;">Climate change implies significant challenges to agricultural productivity worldwide, impacting crop yields. Nevertheless, understanding the complex relation between climate and agricultural data remains a barrier, which needs an efficient data analysis and visualization framework. For this purpose, the objective of this project is to build an ETL pipeline to assess or measure the impact of climate change on agricultural data and provide necessary valuable insights. The pipeline will collect various public datasets including historical climate data such as temperature, and different crops yield records. The extracted data will undergo several transformations to standardize formats, clean outliers, filling missing values and integrate relevant variables. Accordingly, the loaded data will be analyzed using statistical techniques to identify trends, correlations, irregularity caused by climate change effects on crop yield variability. The time series plots, heatmaps, and geographical maps as visualization techniques is utilized to effectively provide insights and patterns derived from the analysis. This framework will empower policymakers, and researchers on how to handle the difficulties arising from climate change in agriculture by providing them with well-informed decision-making capabilities.</p>
 
 
 ## Datasources
@@ -51,7 +51,7 @@ Analysis and Visualization of Agricultural Data based on the impact of Climate C
 
 #### * DataSource Description:
 
-  <p style="text-align: justify;">The Food and Agriculture Organization of the United Nations (FAO) dataset provides comprehensive global crop production statistics for 173 products, categorized into cereals, vegetables, fruits, treenuts, fibre crops, oil crops, pulses, roots and tubers, among others. It includes data on area harvested, production quantity, yield, and seed quantity. Notably, it covers only dry grain cereals, vegetables grown for human consumption (excluding those for animal feed), fresh fruit production primarily for sale (excluding home consumption and wild plants), and treenuts for sale (excluding those for oil extraction and flavoring). The dataset aims to offer a detailed overview of primary crop production worldwide, aiding in the analysis of agricultural productivity, food security, and related economic factors.</p>
+  <p style="text-align: justify;">The Food and Agriculture Organization of the United Nations (FAO) dataset provides comprehensive global crop production statistics for 173 products, categorized into cereals, vegetables, fruits, treenuts, fibre crops, oil crops, pulses, roots and tubers, among others. It includes data on area harvested, production quantity, yield, and seed quantity. The dataset aims to offer a detailed overview of primary crop production worldwide, aiding in the analysis of agricultural productivity, food security, and related economic factors.</p>
 
 #### Source: 
 This dataset is taken from [(FAO)](https://www.fao.org/faostat/en/#data/QCL/visualize) and is used purely for project work only.
@@ -84,7 +84,7 @@ This data is provided by the Food and Agriculture Organization Corporate Statist
 - **Citation**: International Monetary Fund. 2022. Climate Change Indicators Dashboard. Annual Surface Temperature Change, https://climatedata.imf.org/pages/access-data. Accessed on [2024-05-23].
 
 
-This all work is used for only semester project task at FAU.
+This all work is used for only semester project at FAU to understand the ETL pipeline.
 
 
 ## Work Packages:
