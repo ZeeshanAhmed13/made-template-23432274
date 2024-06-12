@@ -29,12 +29,16 @@ class ETLPipeline:
             # Extraction --> DataSource-1: Crop Production
             # ----------------------------------------------------------------------------------------
             crop_df = []
+            print('---------------------------------------------------------------------------')
             for n, url in enumerate(self.urls):
                 try:
                     df = pd.read_csv(url, encoding='latin-1')
                     # append 5 dataframes in total for crop production dataset
                     crop_df.append(df)
-                    logging.info(f"Successfully extracted 'Crop Production' data {n+1} from {url}")
+                    if n+1 == 5:
+                        logging.info(f"Successfully extracted 'Crop Production' data")
+                    else:
+                        continue
                 except Exception as e:
                     logging.error(f"Failed to extract data from {url}: {e}")
 
@@ -50,7 +54,9 @@ class ETLPipeline:
                 temperature_df = pd.read_csv(self.csv_file_name)
                 # Remove the csv file
                 os.remove(self.csv_file_name)
-                logging.info(f"Successfully extracted 'Temperature Data' from {self.csv_file_name}")
+                logging.info(f"Successfully extracted 'Temperature Data'")
+                print('---------------------------------------------------------------------------')
+                
             else:
                 raise FileNotFoundError(f"File {self.csv_file_name} not found.")
             
