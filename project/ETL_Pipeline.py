@@ -159,7 +159,7 @@ etl = ETLPipeline()
 transformed_data, db_name, table_name = etl.run('../data/etl_data.db', 'etl_table')
 
 '''
-from etl_pipeline import ETLPipeline
+from ETL_Pipeline import ETLPipeline
 
 # Running the ETL pipeline
 etl = ETLPipeline()
