@@ -4,8 +4,8 @@
 #!/bin/bash
 
 # Set variables
-OUTPUT_DB="../data/etl_data.db"
-OUTPUT_DB_TEST="../data/test_etl_data.db"
+OUTPUT_DB="./data/etl_data.db"
+OUTPUT_DB_TEST="./data/test_etl_data.db"
 TABLE_NAME="etl_table"
 LOG_FILE="etl_pipeline.log"
 
@@ -16,7 +16,7 @@ error_exit() {
 }
 
 Install_Libraries() {
-    pip3 install -r ../requirements.txt
+    pip3 install -r ./requirements.txt
     echo "--------------------------------------------------------------------------"
     echo "Libraries installed successfully"
     echo "--------------------------------------------------------------------------"
@@ -47,7 +47,9 @@ cleanup() {
 # Function to run unit tests
 run_unit_tests() {
     echo "Unit tests are running..."
-    python3 -m unittest discover -s . -p 'unit_test.py' || error_exit "Unit tests failed."
+    # Short for --pattern and -s: Short for --start-directory..
+    # -p: Specifies a pattern to match test files. Here, unit_test.py is the pattern.
+    python3 -m unittest discover -s ./project -p 'unit_test.py' || error_exit "Unit tests failed."
 }
 
 # Function to run the ETL pipeline
@@ -55,9 +57,9 @@ run_etl_pipeline() {
     echo "--------------------------------------------------------------------------"
     echo "Executing the complete ETL pipeline..."
     python3 -c "
-from ETL_Pipeline import ETLPipeline
+from project.ETL_Pipeline import ETLPipeline
 etl = ETLPipeline()
-etl.run('../data/etl_data.db', 'etl_table')
+etl.run('./data/etl_data.db', 'etl_table')
 " || error_exit "ETL pipeline execution failed."
     [ -f "$OUTPUT_DB_TEST" ] && rm "$OUTPUT_DB_TEST"
 }

@@ -156,7 +156,7 @@ class ETLPipeline:
 
 # Running the ETL pipeline
 etl = ETLPipeline()
-transformed_data, db_name, table_name = etl.run('../data/etl_data.db', 'etl_table')
+transformed_data, db_name, table_name = etl.run('./data/etl_data.db', 'etl_table')
 
 '''
 from ETL_Pipeline import ETLPipeline
