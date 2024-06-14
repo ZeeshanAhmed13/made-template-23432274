@@ -8,11 +8,11 @@ from ETL_Pipeline import ETLPipeline
 
 class TestETLPipeline(unittest.TestCase):
     @classmethod
-    def setUpClass(cls):
+    def setUpClass(self):
         # Run once for all tests
-        cls.etl = ETLPipeline()
-        cls.test_db_name = '../data/test_etl_data.db'
-        cls.test_table_name = 'test_etl_table'
+        self.etl = ETLPipeline()
+        self.test_db_name = '../data/test_etl_data.db'
+        self.test_table_name = 'test_etl_table'
 
     def test_extraction(self):
         # Test the extraction step
