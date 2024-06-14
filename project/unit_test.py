@@ -4,14 +4,16 @@ import unittest
 import pandas as pd
 import sqlite3
 import os
-from ETL_Pipeline import ETLPipeline
+from project.ETL_Pipeline import ETLPipeline
+
+print("dsdfhbsdjf")
 
 class TestETLPipeline(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         # Run once for all tests
         self.etl = ETLPipeline()
-        self.test_db_name = '../data/test_etl_data.db'
+        self.test_db_name = './data/test_etl_data.db'
         self.test_table_name = 'test_etl_table'
 
     def test_extraction(self):
