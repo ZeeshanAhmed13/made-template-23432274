@@ -36,3 +36,73 @@ jobs:
       run: |
         ./project/tests.sh
 
+
+
+
+
+############
+
+
+
+
+# This workflow installs Python dependencies, runs tests, and configures Kaggle credentials
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+
+name: Continuous Integration ETL_Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.11
+
+    - name: Install Libraries and Dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Configure Kaggle credentials
+      run: |
+        mkdir -p ~/.kaggle
+        echo "{\"username\":\"${{ secrets.KAGGLE_USERNAME }}\",\"key\":\"${{ secrets.KAGGLE_KEY }}\"}" > ~/.kaggle/kaggle.json
+        chmod 600 ~/.kaggle/kaggle.json
+      env:
+        KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+        KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+
+    - name: Make tests.sh executable
+      run: chmod +x ./project/tests.sh
+
+    - name: Test with test-files
+      run: ./project/tests.sh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
