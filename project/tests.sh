@@ -16,7 +16,7 @@ error_exit() {
 }
 
 Install_Libraries() {
-    pip3 install -r requirements.txt
+    pip3 install -r ../requirements.txt
     echo "--------------------------------------------------------------------------"
     echo "Libraries installed successfully"
     echo "--------------------------------------------------------------------------"
