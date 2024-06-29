@@ -9,15 +9,16 @@ Analysis and Visualization of Agricultural Data based on the impact of Climate C
 
 <!-- Think about one main question you want to answer based on the data. -->
 
-1. What impact has climate change based on temperature had on crop yield in countries around the world in the last years or decades? Have there been any trends or recurring patterns, in crop yields?
+1. What impact has climate change based on mean surface temperature variation had on crop yield in countries with diverse climates like Pakistan, Germany, Turkey, and Australia in the last years ? 
 
-2. Are there any considerable shifts in the geographical crops distribution as a result of changes in climatic conditions?
+2. Have there been any trends or recurring patterns, in the yields of key crops such as maize, carrots, turnips, rice, and grapes?
+
 
 ## Description
 
 <!-- Describe your data science project in max. 200 words. Consider writing about why and how you attempt it. -->
 
-<p style="text-align: justify;">Climate change implies significant challenges to agricultural productivity worldwide, impacting crop yields. Nevertheless, understanding the complex relation between climate and agricultural data remains a barrier, which needs an efficient data analysis and visualization framework. For this purpose, the objective of this project is to build an ETL pipeline to assess or measure the impact of climate change on agricultural data and provide necessary valuable insights. The pipeline will collect various public datasets including historical climate data such as temperature, and different crops yield records. The extracted data will undergo several transformations to standardize formats, clean outliers, filling missing values and integrate relevant variables. Accordingly, the loaded data will be analyzed using statistical techniques to identify trends, correlations, irregularity caused by climate change effects on crop yield variability. The time series plots as visualization techniques is utilized to effectively provide insights and patterns derived from the analysis. This framework will empower policymakers, and researchers on how to handle the difficulties arising from climate change in agriculture by providing them with well-informed decision-making capabilities.</p>
+<p style="text-align: justify;">Climate change is increasingly reshaping agricultural landscapes worldwide, posing significant challenges to food security and crop productivity. The effects of rising mean surface temperatures are particularly evident in countries with diverse agricultural practices and climatic conditions. The impact of climate change on crop yield varies by region temperate regions, tropical and subtropical regions. Nevertheless, understanding the complex relation between climate and agricultural data remains a barrier, which needs an efficient data analysis and visualization framework. For this purpose, the objective of this project is to build an ETL pipeline to assess the impact of climate change on agricultural data and provide necessary valuable insights. The pipeline will collect various public datasets including historical climate data such as temperature, and different crops yield records. The extracted data will undergo several transformations to standardize formats, filling missing values and integrate relevant variables. Accordingly, the loaded data will be analyzed using statistical techniques to identify trends, correlations, irregularity caused by climate change effects on crop yield variability. The time series plots is utilized to effectively provide insights and patterns derived from the analysis. This framework will empower policymakers, and researchers on how to handle the difficulties arising from climate change in agriculture by providing them with well-informed decision-making capabilities.</p>
 
 
 ## Datasources

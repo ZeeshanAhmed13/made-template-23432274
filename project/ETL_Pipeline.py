@@ -112,7 +112,7 @@ class ETLPipeline:
             # Forward filling with remaining missing values
             transformed_df = transformed_df.interpolate(method='ffill')
             # Filtered crops of interest
-            transformed_df = transformed_df[(transformed_df['Item'].isin(['Maize', 'Wheat', 'Rice, paddy','Sugar cane','Potatoes','Coconuts','Grapes', 'Dates']))].reset_index()
+            transformed_df = transformed_df[(transformed_df['Item'].isin(['Maize', 'Wheat', 'Rice, paddy','Sugar cane','Potatoes','Coconuts','Grapes', 'Dates', 'Carrots and turnips']))].reset_index()
 
 
             return transformed_df
@@ -156,12 +156,4 @@ class ETLPipeline:
 
 # Running the ETL pipeline
 etl = ETLPipeline()
-transformed_data, db_name, table_name = etl.run('./data/etl_data.db', 'etl_table')
-
-'''
-from ETL_Pipeline import ETLPipeline
-
-# Running the ETL pipeline
-etl = ETLPipeline()
-transformed_data, db_name, table_name = etl.run('etl_data.db', 'etl_table')
-''' 
+# transformed_data, db_name, table_name = etl.run('./data/etl_data.db', 'etl_table')

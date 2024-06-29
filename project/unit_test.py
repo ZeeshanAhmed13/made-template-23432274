@@ -6,8 +6,6 @@ import sqlite3
 import os
 from project.ETL_Pipeline import ETLPipeline
 
-print("dsdfhbsdjf")
-
 class TestETLPipeline(unittest.TestCase):
     @classmethod
     def setUpClass(self):
