@@ -41,22 +41,5 @@ jobs:
     - name: Make tests.sh executable
       run: chmod +x ./project/tests.sh
 
-    - name: Test with test-files
-      run: ./project/tests.sh
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    - name: Testing with test-files
+      run: ./project/tests.sh 
