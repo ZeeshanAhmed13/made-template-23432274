@@ -4,11 +4,7 @@
 
 ### Project Badges
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-
-[![CI/CD](ZeeshanAhmed13/made-template-23432274/actions/workflows/github_action_project_test.yml/badge.svg)]([[ZeeshanAhmed13/made-template-23432274/actions/workflows/github_action_project_test.yml](https://github.com/ZeeshanAhmed13/made-template-23432274/actions/workflows/github_action_project_test.yml)](https://github.com/ZeeshanAhmed13/made-template-23432274/actions/workflows/github_action_project_test.yml))
-
-[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)	[![CI/CD](https://github.com/ZeeshanAhmed13/made-template-23432274/actions/workflows/github_action_project_test.yml/badge.svg)](https://github.com/ZeeshanAhmed13/made-template-23432274/actions/workflows/github_action_project_test.yml)	[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 
 
 
@@ -126,9 +122,9 @@ To run tests, run the following command
 
 
 ## Exercises
-During the semester you will need to complete exercises using [Jayvee](https://github.com/jvalue/jayvee). You **must** place your submission in the `exercises` folder in your repository and name them according to their number from one to five: `exercise<number from 1-5>.jv`.
+You will need to complete exercises using [Jayvee](https://github.com/jvalue/jayvee). You **must** place your submission in the `exercises` folder in your repository and name them according to their number from one to five: `exercise<number from 1-5>.jv`.
 
-In regular intervalls, exercises will be given as homework to complete during the semester. Details and deadlines will be discussed in the lecture, also see the [course schedule](https://made.uni1.de/). At the end of the semester, you will therefore have the following files in your repository:
+You will therefore have the following files in your repository:
 
 1. `./exercises/exercise1.jv`
 2. `./exercises/exercise2.jv`
