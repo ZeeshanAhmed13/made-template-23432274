@@ -4,7 +4,7 @@
 
 ### Project Badges
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)	[![CI/CD](https://github.com/ZeeshanAhmed13/made-template-23432274/actions/workflows/github_action_project_test.yml/badge.svg)](https://github.com/ZeeshanAhmed13/made-template-23432274/actions/workflows/github_action_project_test.yml)	[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)	[![CI/CD](https://github.com/ZeeshanAhmed13/made-template-23432274/actions/workflows/github_action_project_test.yml/badge.svg)](https://github.com/ZeeshanAhmed13/made-template-23432274/actions/workflows/github_action_project_test.yml)	[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 
 
 
