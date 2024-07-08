@@ -117,8 +117,7 @@ To run tests, run the following command
 
 ### Optional
 1. Run and explore the report at "./project/analysis.ipynb"
-2. Also can check the related [slides](https://github.com/ZeeshanAhmed13/made-template-23432274/slides.pdf) of the project and project [presentation video](https://github.com/ZeeshanAhmed13/made-template-23432274)
-
+2. Also can check the related [slides](https://github.com/ZeeshanAhmed13/made-template-23432274/blob/main/project/slides.pdf).
 
 
 ## Exercises
